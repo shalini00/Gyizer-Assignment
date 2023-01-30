@@ -1,0 +1,51 @@
+.items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1b1a17;
+  border-radius: 0.5rem;
+  border: 1px solid #a35709;
+  margin: 2rem 2rem;
+  height: 3rem;
+  width: 20rem;
+  padding: 1.25rem;
+}
+
+.item-description h3 {
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.item-description p {
+  font-size: 1rem;
+  margin-top: -1.5rem;
+  color: #f0e3ca;
+}
+
+.item-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-icon,
+.edit-icon,
+.delete-icon {
+  border: 1px solid #a35709;
+  color: white;
+  background-color: #1f1e1b;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.edit-delete {
+  display: flex;
+  width: 4.5rem;
+  justify-content: space-between;
+}

@@ -1,0 +1,36 @@
+.del-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.del-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.question {
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  width: 9rem;
+}
+
+.Cancel-button,
+.Delete-button {
+  background-color: #1f1e1b;
+  border: 1px solid #a35709;
+  color: white;
+  width: 4rem;
+  border-radius: 4px;
+  height: 1.5rem;
+}

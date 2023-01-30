@@ -1,0 +1,28 @@
+.header {
+  height: 5rem;
+ 
+  background-color: #1f1e1b;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  border: 1px solid #a35709;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+}
+
+.main-title {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.sub-title {
+  margin-top: -3rem;
+  font-size: 1rem;
+  color: #f0e3ca;
+}

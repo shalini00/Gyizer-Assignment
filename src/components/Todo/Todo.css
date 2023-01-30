@@ -1,0 +1,93 @@
+.child-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addItems {
+  display: flex;
+  margin-top: 5rem;
+  height: 5rem;
+}
+
+.addDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.addDetails > input,
+textarea {
+  height: 2rem;
+  width: 29rem;
+  background-color: #1f1e1b;
+  border: 1px solid #a35709;
+  border-radius: 4px;
+  color: rgb(192, 182, 182);
+  padding-left: 1.5rem;
+  outline: none;
+}
+
+.addBtn {
+  width: 4.5rem;
+  border-radius: 8px;
+  border: 1px solid #a35709;
+  background-color: #1f1e1b;
+  display: flex;
+  align-items: center;
+  margin-left: 0.4rem;
+  cursor: pointer;
+}
+
+.addBtn i {
+  color: #a35709;
+  text-align: center;
+  width: 100%;
+  margin-top: -0.7rem;
+}
+
+.update-btn {
+  text-align: center;
+  width: 100%;
+
+  background-color: #1f1e1b;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.show-items {
+  border: 1px solid #a35709;
+  background-color: #1f1e1b;
+  width: 80rem;
+  margin-top: 6rem;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.task-container {
+  border: 1px solid #a35709;
+  height: 26rem;
+  width: 80rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  border-radius: 8px;
+}
+
+.content {
+  text-align: center;
+}
+
+hr {
+  border-color: #a35709;
+  width: 4rem;
+}
+
+p {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
