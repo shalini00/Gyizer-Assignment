@@ -1,6 +1,6 @@
 import React from 'react'
 import './DeleteItem.css'
-import Modal from '../modal/Modal';
+import Modal from '../Modal/Modal';
 
 function DeleteItem(props) {
     return (

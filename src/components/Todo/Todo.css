@@ -4,18 +4,20 @@
   align-items: center;
 }
 
-.addItems {
+.add-items {
   display: flex;
-  margin-top: 5rem;
+  margin-top: 4rem;
   height: 5rem;
 }
 
-.addDetails {
+.add-details {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  
 }
-.addDetails > input,
+.add-details > input,
 textarea {
   height: 2rem;
   width: 29rem;
@@ -27,7 +29,17 @@ textarea {
   outline: none;
 }
 
-.addBtn {
+.edit-mode{
+  height: 10rem;
+}
+
+
+
+.edit-textarea{
+   height: 7rem;
+}
+
+.add-btn {
   width: 4.5rem;
   border-radius: 8px;
   border: 1px solid #a35709;
@@ -38,7 +50,7 @@ textarea {
   cursor: pointer;
 }
 
-.addBtn i {
+.add-btn i {
   color: #a35709;
   text-align: center;
   width: 100%;
@@ -59,7 +71,7 @@ textarea {
   border: 1px solid #a35709;
   background-color: #1f1e1b;
   width: 80rem;
-  margin-top: 6rem;
+  margin-top: 10rem;
   border-radius: 8px;
   display: flex;
   flex-wrap: wrap;

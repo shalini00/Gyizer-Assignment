@@ -1,5 +1,5 @@
 *** Project Flow ***
-App --> 1. Header
+App --> 1. Header (navbar)
         2. Todo --> TaskList --> DeleteItem --> Modal
     
 Modal -> It is for backdrop and overlay, when we click the delete, a delete popup will come.

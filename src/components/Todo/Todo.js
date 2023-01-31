@@ -46,10 +46,10 @@ function Todo() {
             setTitle('');
             setDescription('');
             setIsEditItem(null);
-            setToggle(false)
+            setToggle(false);
 
         } else {
-
+            //here unique ids assigned to each data item
             const allData = { id: new Date().getTime().toString(), name: title, desc: description }
 
             setItems([...items, allData]);
@@ -68,7 +68,14 @@ function Todo() {
         })
 
         setItems(updatedItems);
+      
+        //if user deletes during edit mode this will set all to initial values
+        setToggle(false);
+        setTitle('');
+        setDescription('');
     }
+
+    
 
 
     // to update the item -- setting the id of updated item so that we can update the changes in that item only 
@@ -95,12 +102,12 @@ function Todo() {
         <>
             <div className="main-div">
                 <div className="child-div">
-                    <div className="addItems">
-                        <div className="addDetails">
+                    <div className='add-items'>
+                        <form className={toggle? 'add-details edit-mode' : 'add-details'}>
                             <input type="text" placeholder='Title...' value={title} onChange={e => setTitle(e.target.value)} />
-                            <input type="text" placeholder='Input...' value={description} onChange={e => setDescription(e.target.value)} />
-                        </div>
-                        <div className="addBtn">
+                            <textarea type="text" className={toggle? 'edit-textarea' : ''} placeholder='Input...' value={description} onChange={e => setDescription(e.target.value)} />
+                        </form>
+                        <div className="add-btn">
                             {/* add or update button based on toggle value */}
                             {toggle ? <button className='update-btn' onClick={addItems}>UPDATE</button> : <i className="fa-duotone fa-plus fa-4x" title='Add Item' onClick={addItems} />}
 
@@ -116,7 +123,7 @@ function Todo() {
                                         return (
                                             <div className="item" key={element.id}>
                                                 {/* props are passed to the TaskList where we render all the tasks list */}
-                                                <TaskList name={element.name} desc={element.desc} id={element.id} edit={editItem} del={deleteItem} />
+                                                <TaskList name={element.name} desc={element.desc} id={element.id} edit={editItem} del={deleteItem} toggle={toggle}/>
                                             </div>
                                         )
                                     })

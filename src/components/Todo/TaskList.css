@@ -44,6 +44,10 @@
   cursor: pointer;
 }
 
+.edit-clicked{
+    background-color: #a35709;
+}
+
 .edit-delete {
   display: flex;
   width: 4.5rem;
